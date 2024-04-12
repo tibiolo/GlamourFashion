@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="popupstyle.css" />
+    <title>Home - Glamour Fashion</title>
+  </head>
+  <body>
+    <header>
+      <nav class="category-nav">
+        <a class="category-btn" href="">Men</a>
+        <a class="category-btn" href="">Women</a>
+      </nav>
+
+      <a class="logo" href="">
+        <img src="./assets/img/logo.png" alt="" />
+      </a>
+
+      <a class="short-logo" href="">
+        <img src="./assets/img/short-logo.png" alt="" />
+      </a>
+
+      <div class="user-nav">
+        <a class="user-nav-btn" onclick="openForm()"
+          ><img src="./assets/img/user-icon.svg" alt=""
+        /></a>
+        <a class="user-nav-btn" href=""
+          ><img src="./assets/img/bag-icon.svg" alt=""
+        /></a>
+      </div>
+    </header>
+
+    <div class="shop-container">
+      <div class="product">
+        <img src="./assets/img/pic1.webp" alt="" />
+        <h3>Gay T-shirt</h3>
+        <h4>$99.99</h4>
+      </div>
+
+      <div class="product">
+        <img src="./assets/img/Product-img/img2.jpeg" alt="" />
+        <h3>Lolz T-shirt</h3>
+        <h4>$99.99</h4>
+      </div>
+
+      <div class="product">
+        <img src="./assets/img/Product-img/img3.jpeg" alt="" />
+        <h3>Bitch Deluxe</h3>
+        <h4>$99.99</h4>
+      </div>
+
+      <div class="product">
+        <img src="./assets/img/Product-img/img4.jpeg" alt="" />
+        <h class="title">Star Pants</h>
+        <h1 class="price">$99.99</h1>
+      </div>
+
+      <div class="product">
+        <img src="https://images.asos-media.com/products/vans-authentic-stackform-trainers-in-white/206087432-1-white?$n_640w$&wid=634&fit=constrain" alt="" />
+        <h3>Blue Ass Dress</h3>
+        <h4>$99.99</h4>
+      </div>
+
+      <div class="product">
+        <img src="./assets/img/Product-img/img6.jpeg" alt="" />
+        <h3>Forest Camo Sweater</h3>
+        <h4>$99.99</h4>
+      </div>
+    </div>
+
+    <div class="login-popup" id="login-popup">
+      <div class="login-popup-header">
+        <h1>Login</h1>
+      </div>
+      <form
+        class="login-popup-form"
+        name="login"
+        action="/action_page.php"
+        method="post"
+      >
+        <input
+          class="form-element"
+          type="text"
+          placeholder="Enter Email"
+          name="email"
+          required
+        />
+
+        <input
+          class="form-element"
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+
+        <button class="form-element" type="submit">Login</button>
+       
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
