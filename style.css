@@ -152,12 +152,28 @@ header {
   aspect-ratio: 1/1;
 }
 
+
 .selection-banner-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.selection-banner-text a {
+  color: white;
+  text-decoration: none;
+}
+
+.selection-banner-text h1 {
+  margin-bottom: 5px;
+}
+
+.selection-banner-text p {
+  opacity: 0%;
+  text-decoration: underline;
+}
+
 
 /* SHOP DISPLAY */
 

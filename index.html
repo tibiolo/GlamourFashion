@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="popupstyle.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Home - Glamour Fashion</title>
   </head>
   <body>
@@ -63,18 +64,24 @@
     </div>
 
     <div class="selection-banner">
-      <div class="selection-img">
-        <img src="./assets/img/selection-banner-img1.png" alt="" />
+      <div id="selection-banner1" class="selection-img">
+        <a href="/"
+          ><img src="./assets/img/selection-banner-img1.png" alt=""
+        /></a>
         <div class="selection-banner-text">
-          <h1>Women Selection</h1><br>
-          <button class="button-over-images">Shop Women</button>
+          <a href="/">
+            <h1>Women Selection</h1>
+            <p class="shop-now-button1">Shop now</p>
+          </a>
         </div>
       </div>
-      <div class="selection-img">
-        <img src="./assets/img/burp2.jpg" alt="" />
+      <div id="selection-banner2" class="selection-img">
+        <a href="/"><img id="gray" src="./assets/img/burp2.jpg" alt="" /></a>
         <div class="selection-banner-text">
-          <h1>Men's Selection</h1><br>
-          <button class="button-over-images">Shop Men's</button>
+          <a href="/">
+            <h1>Men's Selection</h1>
+            <p class="shop-now-button2">Shop now</p>
+          </a>
         </div>
       </div>
     </div>
