@@ -8,7 +8,7 @@ function closeForm() {
   document.getElementById("login-popup").style.display = "none";
 }
 
-// Selection - Button Animation
+// Selection - Button Animation - Image Background Blur
 
 $("#selection-banner1").hover(function () {
     // over

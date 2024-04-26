@@ -258,6 +258,11 @@ footer {
     height: 100%;
   }
 
+  .selection-banner-text p {
+    opacity: 100%;
+    text-decoration: underline;
+  }
+
   .shop-container {
     margin-top: calc(5vh + 5%);
     width: 75%;
