@@ -10,41 +10,54 @@ function closeForm() {
 
 // Selection - Button Animation - Image Background Blur
 
-$("#selection-banner1").hover(function () {
-    // over
-    $(".shop-now-button1").animate({
-      opacity: '1',
-    }, "fast");
+if (window.matchMedia("(min-width: 600px)").matches) {
+  $("#selection-banner1").hover(
+    function () {
+      // over
+      $(".shop-now-button1").animate(
+        {
+          opacity: "1",
+        },
+        "fast"
+      );
 
-    $(".selection-banner-img1").css("filter", "blur(2px)")
+      $(".selection-banner-img1").css("filter", "blur(2px)");
+    },
+    function () {
+      // out
+      $(".shop-now-button1").animate(
+        {
+          opacity: "0",
+        },
+        "fast"
+      );
 
-  }, function () {
-    // out
-    $(".shop-now-button1").animate({
-      opacity: '0',
-    }, "fast");
+      $(".selection-banner-img1").css("filter", "blur(0px)");
+    }
+  );
 
-    $(".selection-banner-img1").css("filter", "blur(0px)")
+  $("#selection-banner2").hover(
+    function () {
+      // over
+      $(".shop-now-button2").animate(
+        {
+          opacity: "1",
+        },
+        "fast"
+      );
 
-  }
-);
+      $(".selection-banner-img2").css("filter", "blur(2px)");
+    },
+    function () {
+      // out
+      $(".shop-now-button2").animate(
+        {
+          opacity: "0",
+        },
+        "fast"
+      );
 
-$("#selection-banner2").hover(function () {
-  // over
-  $(".shop-now-button2").animate({
-    opacity: '1',
-  }, "fast");
-
-  $(".selection-banner-img2").css("filter", "blur(2px)")
-
-}, function () {
-  // out
-  $(".shop-now-button2").animate({
-    opacity: '0',
-  }, "fast");
-
-  $(".selection-banner-img2").css("filter", "blur(0px)")
-
+      $(".selection-banner-img2").css("filter", "blur(0px)");
+    }
+  );
 }
-);
-
