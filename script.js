@@ -10,20 +10,22 @@ function closeForm() {
 
 // Selection - Button Animation
 
-//$("#selection-banner").hover(function () {
-//  $(".shop-now-button").css("opacity", "100%");
-//});
-
 $("#selection-banner1").hover(function () {
     // over
     $(".shop-now-button1").animate({
       opacity: '1',
     }, "fast");
+
+    $(".selection-banner-img1").css("filter", "blur(2px)")
+
   }, function () {
     // out
     $(".shop-now-button1").animate({
       opacity: '0',
     }, "fast");
+
+    $(".selection-banner-img1").css("filter", "blur(0px)")
+
   }
 );
 
@@ -32,10 +34,17 @@ $("#selection-banner2").hover(function () {
   $(".shop-now-button2").animate({
     opacity: '1',
   }, "fast");
+
+  $(".selection-banner-img2").css("filter", "blur(2px)")
+
 }, function () {
   // out
   $(".shop-now-button2").animate({
     opacity: '0',
   }, "fast");
+
+  $(".selection-banner-img2").css("filter", "blur(0px)")
+
 }
 );
+
