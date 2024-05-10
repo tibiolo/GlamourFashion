@@ -153,7 +153,6 @@ header {
   transition: 0.2s;
 }
 
-
 .selection-banner-text {
   position: absolute;
   top: 50%;
@@ -175,36 +174,27 @@ header {
   text-decoration: underline;
 }
 
-
-/* SHOP DISPLAY */
+/* Product Page - PRODUCT DISPLAY */
 
 .shop-container {
-  margin-top: calc(5vh + 5%);
+  margin: calc(5vh + 5%) 1%;
   display: grid;
-  width: 75%;
-  gap: 2rem;
+  gap: 5rem 1.1rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .product {
   width: 100%;
 }
 
-.product .title {
-  font-family: lato;
-  font-size: 2.5rem;
-}
-
-.product .price {
-  font-family: lato;
-  font: bold;
-  font-size: 1.8rem;
+.product h4, p {
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .product img {
   max-width: 100%;
-  border-radius: 1rem;
 }
 
 footer {
