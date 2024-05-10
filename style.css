@@ -188,7 +188,8 @@ header {
   width: 100%;
 }
 
-.product h4, p {
+.product h4,
+p {
   font-size: 15px;
   line-height: 20px;
 }
@@ -254,10 +255,8 @@ footer {
   }
 
   .shop-container {
-    margin-top: calc(5vh + 5%);
-    width: 75%;
-    gap: 2rem;
-    grid-template-columns: 1fr;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
