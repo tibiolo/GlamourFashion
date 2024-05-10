@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -38,7 +39,7 @@ header {
 }
 
 .logo img {
-  width: 80%;
+  width: 70%;
 }
 
 .short-logo {
@@ -192,6 +193,8 @@ header {
 p {
   font-size: 15px;
   line-height: 20px;
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
 }
 
 .product img {
@@ -220,7 +223,7 @@ footer {
   }
 
   .short-logo img {
-    width: 40%;
+    width: 35%;
   }
 
   header {
@@ -255,8 +258,15 @@ footer {
   }
 
   .shop-container {
+    margin: calc(5vh + 5%) 4%;
     gap: 1rem;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .product h4,
+  p {
+    font-size: 12px;
+    line-height: 20px;
   }
 }
 
