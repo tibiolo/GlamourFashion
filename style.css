@@ -28,6 +28,7 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
   z-index: 100;
   background-color: white;
+  border-bottom: 1px solid #bbb;
 }
 
 .logo {
@@ -189,9 +190,13 @@ header {
   width: 100%;
 }
 
+.product-details {
+  padding: 8px 2pc 4px 8px;
+}
+
 .product h4,
 p {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 20px;
   font-family: "Archivo", sans-serif;
   font-optical-sizing: auto;
@@ -202,12 +207,16 @@ p {
 }
 
 footer {
-  background-color: black;
-  height: 10%;
-  color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  height: 10%;
+  color: black;
+  border-top: 1px solid #bbb;
+}
+
+.footer-section {
+  width: 100%;
+  text-align: center;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -267,6 +276,10 @@ footer {
   p {
     font-size: 12px;
     line-height: 20px;
+  }
+
+  .footer {
+    flex-direction: column;
   }
 }
 
