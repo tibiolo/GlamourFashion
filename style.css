@@ -136,7 +136,6 @@ header {
 /* Selection Banner */
 
 .selection-banner {
-  background-color: black;
   display: flex;
   flex-wrap: wrap;
 }
@@ -208,15 +207,33 @@ p {
 
 footer {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   height: 10%;
   color: black;
-  border-top: 1px solid #bbb;
+  /* border-top: 1px solid #bbb; */
+}
+
+.footer-section-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  padding: 3%;
 }
 
 .footer-section {
-  width: 100%;
-  text-align: center;
+  width: 25%;
+}
+
+.footer-section-title {
+  margin-block: 15px;
+  font-size: medium;
+}
+
+.footer-links {
+  list-style-type: none;
+  font-size: small;
+  line-height: 20px;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -279,7 +296,11 @@ footer {
   }
 
   .footer {
-    flex-direction: column;
+  }
+
+  .footer-section {
+    width: 100%;
+    text-align: center;
   }
 }
 
