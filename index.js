@@ -1,6 +1,5 @@
 import express from "express";
 import bodyParser from "body-parser";
-import path from "path";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -8,7 +7,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const PORT = 3000;
 
-app.use(express.static("public"))
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.listen(PORT, (req, res) => {
@@ -16,9 +15,9 @@ app.listen(PORT, (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.render(__dirname + "/index.ejs");
 });
 
-app.get("/product.html", (req, res) => {
-  res.sendFile(__dirname + "/product.html")
-})
+app.get("/product", (req, res) => {
+  res.render(__dirname + "/product.ejs");
+});

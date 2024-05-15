@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/popupstyle.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Glamour Fashion</title>
+  </head>
+  <body>
+    <%- include('partials/nav.ejs') %>
+
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Explore Our Selection</h1>
+        <br />
+        <button class="button-over-images">Explore</button>
+      </div>
+    </div>
+
+    <div class="selection-banner">
+      <div id="selection-banner1" class="selection-img">
+        <a href="./product"
+          ><img
+            class="selection-banner-img1"
+            src="/images/selection-banner-img1.png"
+            alt=""
+        /></a>
+        <div class="selection-banner-text">
+          <a href="./product">
+            <h1>Women Selection</h1>
+            <p class="shop-now-button1">Shop now</p>
+          </a>
+        </div>
+      </div>
+      <div id="selection-banner2" class="selection-img">
+        <a href="./product"
+          ><img
+            class="selection-banner-img2"
+            src="/images/selection-banner-img2.jpg"
+            alt=""
+        /></a>
+        <div class="selection-banner-text">
+          <a href="./product">
+            <h1>Men's Selection</h1>
+            <p class="shop-now-button2">Shop now</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <%- include('partials/footer.html') %>
+
+    <script src="/script/script.js"></script>
+  </body>
+</html>
