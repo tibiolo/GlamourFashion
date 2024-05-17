@@ -29,3 +29,7 @@ app.get("/mens", (req, res) => {
 app.get("/women", (req, res) => {
   res.render(__dirname + "/women.ejs", { products: productsData });
 });
+
+app.get("/product", (req, res) => {
+  res.render(__dirname + "/product.ejs", { products: productsData})
+})
