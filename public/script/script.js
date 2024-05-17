@@ -64,7 +64,7 @@ if (window.matchMedia("(min-width: 600px)").matches) {
 
 // SHOP DISPLAY 
 
-// Hides main images and displays the 2nd ones.
+// Hides main images and displays the 2nd ones..
 const productContainers = document.querySelectorAll('.product-image-container');
 
 productContainers.forEach(container => {
