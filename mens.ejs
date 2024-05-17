@@ -12,18 +12,26 @@
     <%- include('partials/nav.ejs') %>
 
     <div class="shop-container">
-      <div class="product">
-        <img src="/images/Product-img/limg1.webp" alt="" />
-        <div class="product-details">
-          <h4>T-shirt</h4>
-          <p>$ 99.99</p>
+      <% products.products.men.forEach(product => { %>
+
+        <div class="product">
+          <div id="<%= product.id %>" class="product-image-container"> 
+            <img class="product-main-img" src=<%= product.img %> alt="" />
+            <img class="product-hover-img" src=<%= product.img2 %> alt="" />
+          </div>
+          
+          <div class="product-details">
+            <h4><%= product.name %></h4>
+            <p>£ <%= product.price %></p>
+          </div>
         </div>
-      </div>
+       
+      <% }) %>
     </div>
 
 
     <%- include('partials/footer.html') %>
 
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
   </body>
 </html>

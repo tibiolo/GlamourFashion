@@ -61,3 +61,20 @@ if (window.matchMedia("(min-width: 600px)").matches) {
     }
   );
 }
+
+// SHOP DISPLAY 
+
+// Hides main images and displays the 2nd ones.
+const productContainers = document.querySelectorAll('.product-image-container');
+
+productContainers.forEach(container => {
+  container.addEventListener('mouseenter', () => {
+    container.querySelector('.product-main-img').style.display = 'none';
+    container.querySelector('.product-hover-img').style.display = 'block';
+  });
+
+  container.addEventListener('mouseleave', () => {
+    container.querySelector('.product-main-img').style.display = 'block';
+    container.querySelector('.product-hover-img').style.display = 'none';
+  });
+});
