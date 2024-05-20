@@ -49,6 +49,10 @@ app.get("/products/women", (req, res) => {
   res.render(__dirname + "/women.ejs", { products: productsData });
 });
 
+app.get("/contact", (req, res) => {
+  res.render(__dirname + "/contact.ejs")
+})
+
 app.get("/products/:category/:id", (req, res) => {
   const categoryId = req.params.category;
   const productId = req.params.id;

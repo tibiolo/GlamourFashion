@@ -1,0 +1,106 @@
+/* Style your header and navigation (replace with your existing styles) */
+
+main {
+  margin: calc(5vh + 1%) 1%;
+  padding: 50px 0;
+}
+
+.contact-section {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;  /* Make labels block level for stacking on top */
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-section button {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-size: large;
+}
+
+.contact-section button:hover {
+  background-color: #333;
+}
+
+.contact-info {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.contact-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #000;  /* Black text color for links */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.contact-info a:hover {
+  color: #333;  /* Darker black on hover for links */
+}
+
+@media only screen and (max-width: 600px) {
+
+  .contact-section {
+    padding: 5%;
+  }
+}
+

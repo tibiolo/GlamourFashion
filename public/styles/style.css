@@ -252,6 +252,7 @@ p {
 
 .single-product-button button {
   width: 80%;
+  margin-top: 15px;
   padding: 2%;
   background-color: black;
   color: white;
@@ -360,6 +361,7 @@ footer {
   /*Mobile - Single Product Display Page */
   .display-container {
     margin: calc(5vh + 2%) 1%;
+    margin-bottom: 100px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -372,6 +374,9 @@ footer {
     height: auto;
   }
 
+  .single-product-info {
+    margin: 4% 0;
+  }
   .single-product-button button {
     width: 100%;
     padding: 5%;

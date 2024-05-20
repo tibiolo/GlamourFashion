@@ -1,14 +1,13 @@
 .size-picker {
   display: flex;
   flex-direction: column;
-  
+
   margin: 20px auto;
-  
-  
+
   font-family: sans-serif;
 }
 
-.size-picker h2 {
+.size-picker h3 {
   margin-bottom: 10px;
 }
 
