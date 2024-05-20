@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/sizepicker.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Glamour Fashion</title>
   </head>
@@ -13,17 +16,43 @@
 
     <div class="display-container">
       <div class="single-product-img">
-        <img src="/images/Product-img/male/m1.avif" alt="">
-        <img src="/images/Product-img/male/m1-1.avif" alt="">
+        <div class="product-image-carousel">  <img src=<%= product.img %> alt="">
+          <img src=<%= product.img2 %> alt="">
+        </div>
       </div>
       <div class="single-product-info">
-        <h1>lol</h1>
+        <div class="single-product-details">
+          <h2><%= product.name %></h2>
+          <p>£ <%= product.price %></p>
+        </div>
+        <div class="single-product-button">
+          <div class="size-picker">
+            <h2>Select Size</h2>
+            <form>
+              <div class="size-options">  <div class="size-option">
+                  <input type="radio" id="size-s" name="size" value="S">
+                  <label for="size-s">S</label>
+                </div>
+                <div class="size-option">
+                  <input type="radio" id="size-m" name="size" value="M">
+                  <label for="size-m">M</label>
+                </div>
+                <div class="size-option">
+                  <input type="radio" id="size-l" name="size" value="L">
+                  <label for="size-l">L</label>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <button type="submit">ADD TO SHOPPING BAG</button>
+        </div>
       </div>
     </div>
 
 
     <%- include('partials/footer.html') %>
 
-    <script src="script.js"></script>
+    <script src="/script/script.js"></script>
   </body>
 </html>

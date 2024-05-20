@@ -78,3 +78,14 @@ productContainers.forEach(container => {
     container.querySelector('.product-hover-img').style.display = 'none';
   });
 });
+
+
+// Single Product Display Page //
+
+document.addEventListener('DOMContentLoaded', function() {
+  var carousel = new Flickity('.product-image-carousel', {
+    // Optional configuration options for Flickity
+    // (e.g., cellAlign, contain, wrapAround, etc.)
+    autoPlay: true
+  });
+});

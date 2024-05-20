@@ -14,7 +14,7 @@
     <div class="shop-container">
       <% products.products.women.forEach(product => { %>
 
-        <div class="product">
+        <div onclick="location.href = '/products/women/<%= product.id %>';" class="product">
           <div id="<%= product.id %>" class="product-image-container"> 
             <img class="product-main-img" src=<%= product.img %> alt="" />
             <img class="product-hover-img" src=<%= product.img2 %> alt="" />
@@ -32,6 +32,6 @@
 
     <%- include('partials/footer.html') %>
 
-    <script src="script/script.js"></script>
+    <script src="/script/script.js"></script>
   </body>
 </html>

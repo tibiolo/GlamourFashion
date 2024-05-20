@@ -1,0 +1,42 @@
+.size-picker {
+  display: flex;
+  flex-direction: column;
+  
+  margin: 20px auto;
+  
+  
+  font-family: sans-serif;
+}
+
+.size-picker h2 {
+  margin-bottom: 10px;
+}
+
+.size-options {
+  display: flex;
+}
+
+.size-option {
+  margin-right: 10px;
+}
+
+.size-option input {
+  display: none;
+}
+
+.size-option label {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.size-option input:checked + label {
+  background-color: black;
+  color: white;
+}
