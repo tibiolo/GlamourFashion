@@ -8,6 +8,7 @@ const productsData = JSON.parse(
   readFileSync(join(__dirname, "productsdata.json"), "utf-8")
 );
 
+
 const app = express();
 const PORT = 3000;
 
@@ -30,6 +31,8 @@ app.get("/women", (req, res) => {
   res.render(__dirname + "/women.ejs", { products: productsData });
 });
 
-app.get("/product", (req, res) => {
+app.get("/mens/product/:id", (req, res) => {
+  const productId = req.params.id; 
+  console.log(productId)
   res.render(__dirname + "/product.ejs", { products: productsData})
 })
