@@ -15,6 +15,10 @@ const PORT = 8080;
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.listen(PORT, (req, res) => {
+  console.log(`Server running on port: ${PORT}`);
+});
+
 function getProductsData() {
   const data = fs.readFileSync("productsdata.json", "utf8");
   const parsedData = JSON.parse(data);
@@ -23,19 +27,13 @@ function getProductsData() {
 
 function getCategoryProducts(categoryId) {
   const productsData = getProductsData();
-  console.log(categoryId);
   return productsData.products[categoryId] || [];
 }
 
 function getProductById(productId, categoryId) {
   const products = getCategoryProducts(categoryId);
-  console.log(products[productId]);
   return products[productId];
 }
-
-app.listen(PORT, (req, res) => {
-  console.log(`Server running on port: ${PORT}`);
-});
 
 app.get("/", (req, res) => {
   res.render(__dirname + "/index.ejs");
@@ -64,10 +62,8 @@ app.get("/products/:category/:id", (req, res) => {
   const product = getProductById(productId, categoryId);
 
   if (product) {
-    // Render the product page template with product details
     res.render(__dirname + "/product.ejs", { product });
   } else {
-    // Handle case where product is not found
     res.status(404).send("Product not found");
   }
 });
