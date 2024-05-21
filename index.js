@@ -10,7 +10,7 @@ const productsData = JSON.parse(
 );
 
 const app = express();
-const PORT = 3000;
+const PORT = 8080;
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -50,8 +50,12 @@ app.get("/products/women", (req, res) => {
 });
 
 app.get("/contact", (req, res) => {
-  res.render(__dirname + "/contact.ejs")
-})
+  res.render(__dirname + "/contact.ejs");
+});
+
+app.get("/login", (req, res) => {
+  res.render(__dirname + "/login.ejs");
+});
 
 app.get("/products/:category/:id", (req, res) => {
   const categoryId = req.params.category;
@@ -66,4 +70,12 @@ app.get("/products/:category/:id", (req, res) => {
     // Handle case where product is not found
     res.status(404).send("Product not found");
   }
+});
+
+app.post("/contact", (req, res) => {
+  res.render(__dirname + "/contact.ejs");
+});
+
+app.post("/login", (req, res) => {
+  res.render(__dirname + "/login.ejs");
 });

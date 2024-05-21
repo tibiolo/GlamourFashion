@@ -1,0 +1,59 @@
+main {
+  margin: calc(5vh + 5%) 0 15% 0;
+  padding: 50px 0;
+}
+
+.login-form {  /* Only styles for the login form */
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.login-form h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-form p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;  /* Make labels block level for stacking on top */
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.login-form button {
+  width: 100%;
+  font-size: large;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login-form button:hover {
+  background-color: #333;
+}
