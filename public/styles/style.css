@@ -261,6 +261,7 @@ p {
   cursor: pointer;
 }
 
+/* footer */
 
 footer {
   display: flex;
@@ -268,7 +269,6 @@ footer {
   flex-wrap: wrap;
   height: 10%;
   color: black;
-  /* border-top: 1px solid #bbb; */
 }
 
 .footer-section-container {
@@ -327,7 +327,7 @@ footer {
   }
 
   .hero-image {
-    background-image: url(./assets/img/banner_img/banner_MB.avif);
+    background-image: url("/images/banner_img/banner_MB.avif");
   }
 
   .selection-img {

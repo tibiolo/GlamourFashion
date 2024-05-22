@@ -5,71 +5,71 @@
         "id": 0,
         "img": "/images/Product-img/male/m1.avif",
         "img2": "/images/Product-img/male/m1-1.avif",
-        "name": "Men's Product A",
-        "price": 29.99
+        "name": "Silk and leather blouson jacket",
+        "price": 1900
       },
       {
         "id": 1,
         "img": "/images/Product-img/male/m2.avif",
         "img2": "/images/Product-img/male/m2-2.webp",
-        "name": "Men's Product A",
-        "price": 29.99
+        "name": "Light technical fabric jacket",
+        "price": 2000
       },
       {
         "id": 2,
         "img": "/images/Product-img/male/m3.jpg",
         "img2": "/images/Product-img/male/m3-3.avif",
-        "name": "Men's Product A",
-        "price": 29.99
+        "name": "Cotton crew-neck sweater ",
+        "price": 2999.99
       },
       {
         "id": 3,
         "img": "/images/Product-img/male/m4.avif",
         "img2": "/images/Product-img/male/m4-4.avif",
-        "name": "Men's Product A",
-        "price": 29.99
+        "name": "Cashmere Polo Shirt",
+        "price": 3900
       },
       {
         "id": 4,
         "img": "/images/Product-img/male/m5.avif",
         "img2": "/images/Product-img/male/m5-5.avif",
-        "name": "Men's Product A",
-        "price": 29.99
+        "name": "Wool and cashmere crew-neck sweater",
+        "price": 2000.99
       },
       {
         "id": 5,
         "img": "/images/Product-img/male/m6.avif",
         "img2": "/images/Product-img/male/m6-6.avif",
-        "name": "Men's Product A",
-        "price": 29.99
+        "name": " Denim overshirt",
+        "price": 6000
       },
       {
         "id": 6,
         "img": "/images/Product-img/male/m7.avif",
         "img2": "/images/Product-img/male/m7-7.avif",
-        "name": "Men's Product A",
-        "price": 29.99
+        "name": "Embroidered barocco sea hoodie",
+        "price": 5400
       },
       {
         "id": 7,
         "img": "/images/Product-img/male/m8.avif",
         "img2": "/images/Product-img/male/m8-8.avif",
-        "name": "Men's Product A",
-        "price": 29.99
+        "name": "Superfine wool crew-neck sweate",
+        "price": 4000
       },
       {
         "id": 8,
         "img": "/images/Product-img/male/m9.avif",
         "img2": "/images/Product-img/male/m9-9.avif",
-        "name": "Men's Product A",
-        "price": 29.99
+        "name": "Dior Oblique Overshirt",
+        "price": 2900.99
       },
       {
         "id": 9,
         "img": "/images/Product-img/male/m10.avif",
         "img2": "/images/Product-img/male/m10-10.avif",
-        "name": "Men's Product A",
-        "price": 29.99
+        "name": "Five-pocket denim jeans",
+        "price": 2999.99
       }
     ],
     "women": [
@@ -77,71 +77,71 @@
         "id": 0,
         "img": "/images/Product-img/female/w1.avif",
         "img2": "/images/Product-img/female/w1-1.webp",
-        "name": "Women's Product A",
-        "price": 49.99
+        "name": "Short-Sleeved Jacket",
+        "price": 3000
       },
       {
         "id": 1,
         "img": "/images/Product-img/female/w2.avif",
         "img2": "/images/Product-img/female/w2-2.avif",
-        "name": "Women's Product A",
-        "price": 49.99
+        "name": "Dioriviera Short-Sleeved Sweater",
+        "price": 4999.99
       },
       {
         "id": 2,
         "img": "/images/Product-img/female/w3.avif",
         "img2": "/images/Product-img/female/w3-3.avif",
-        "name": "Women's Product A",
-        "price": 49.99
+        "name": "Nylonette mini-dress",
+        "price": 4900
       },
       {
         "id": 3,
         "img": "/images/Product-img/female/w4.avif",
         "img2": "/images/Product-img/female/w4-4.avif",
-        "name": "Women's Product A",
-        "price": 49.99
+        "name": "Embroidered striped organza dress",
+        "price": 5000
       },
       {
         "id": 4,
         "img": "/images/Product-img/female/w5.avif",
         "img2": "/images/Product-img/female/w5-5.avif",
-        "name": "Women's Product A",
-        "price": 49.99
+        "name": "Skort with CD Buckle",
+        "price": 4999.99
       },
       {
         "id": 5,
         "img": "/images/Product-img/female/w6.avif",
         "img2": "/images/Product-img/female/w6-6.avif",
-        "name": "Women's Product A",
-        "price": 49.99
+        "name": "Poplin dress",
+        "price": 4999.99
       },
       {
         "id": 6,
         "img": "/images/Product-img/female/w7.avif",
         "img2": "/images/Product-img/female/w7-7.avif",
-        "name": "Women's Product A",
-        "price": 49.99
+        "name": "Cotton cardigan",
+        "price": 2500
       },
       {
         "id": 7,
         "img": "/images/Product-img/female/w8.avif",
         "img2": "/images/Product-img/female/w8-8.avif",
-        "name": "Women's Product A",
-        "price": 49.99
+        "name": "Denim jeans",
+        "price": 3000
       },
       {
         "id": 8,
         "img": "/images/Product-img/female/w9.avif",
         "img2": "/images/Product-img/female/w9-9.avif",
-        "name": "Women's Product A",
-        "price": 49.99
+        "name": "Denim hanky hem top",
+        "price": 4000.99
       },
       {
         "id": 9,
         "img": "/images/Product-img/female/w10.avif",
         "img2": "/images/Product-img/female/w10-10.avif",
-        "name": "Women's Product A",
-        "price": 49.99
+        "name": "Wool cardigan",
+        "price": 4999.99
       }
     ]
   }

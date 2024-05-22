@@ -1,13 +1,3 @@
-// Open/Close - Login Popup
-
-function openForm() {
-  document.getElementById("login-popup").style.display = "grid";
-}
-
-function closeForm() {
-  document.getElementById("login-popup").style.display = "none";
-}
-
 // Selection - Button Animation - Image Background Blur
 
 if (window.matchMedia("(min-width: 600px)").matches) {
