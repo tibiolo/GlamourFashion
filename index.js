@@ -10,13 +10,14 @@ const productsData = JSON.parse(
 );
 
 const app = express();
-const PORT = 3000;
+const port = parseInt(process.env.PORT) || 8080;
+// const PORT = 3000;
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.listen(PORT, (req, res) => {
-  console.log(`Server running on port: ${PORT}`);
+app.listen(port, (req, res) => {
+  console.log(`Server running on port: ${port}`);
 });
 
 function getProductsData() {
