@@ -10,7 +10,7 @@ const productsData = JSON.parse(
 );
 
 const app = express();
-const PORT = 8080;
+const PORT = 3000;
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
